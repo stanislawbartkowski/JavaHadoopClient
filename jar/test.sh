@@ -1,7 +1,4 @@
-HADOOP_CLIENT=/usr/hdp/current/hadoop-client
-CONF=/etc/hadoop/conf
-
-CMD="java -cp HdfsClient.jar:$HADOOP_CLIENT/*:$HADOOP_CLIENT/client/*:$CONF Main"
+source env.rc
 
 list() {
    $CMD list /tmp
