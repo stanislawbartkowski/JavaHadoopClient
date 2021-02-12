@@ -1,8 +1,8 @@
 source env.rc
 
 download() {
-  local -r IPATH=/apps/datalake/uploaded.txt
-  $CMD cat $IPATH
+  local -r IPATH=/datalake/uploaded.txt
+  $CMD -a cat -f $IPATH
 }
 
 download

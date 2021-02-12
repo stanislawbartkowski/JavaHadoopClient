@@ -84,7 +84,7 @@ public class Main {
 		Path outputPath = new Path(textfile);
 		try (OutputStream os = fs.create(outputPath);
 				BufferedWriter outs = new BufferedWriter(new OutputStreamWriter(os))) {
-			outs.write("I was created directly but Hadoop Java Client");
+			outs.write("I was created directly by Hadoop Java Client");
 			outs.newLine();
 			outs.write("I'm good");
 			outs.newLine();

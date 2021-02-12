@@ -1,8 +1,8 @@
 source env.rc
 
 list() {
-  local -r IPATH=/apps/datalake
-  $CMD list $IPATH
+  local -r IPATH=/datalake
+  $CMD -a list -f $IPATH
 }
 
 list
